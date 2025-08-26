@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diksha | Engineering the Future</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo">Diksha</div>
+    <nav>
+      <a onclick="showSection('hero')">Home</a>
+      <a onclick="showSection('about')">About</a>
+      <a onclick="showSection('projects')">Projects</a>
+      <a onclick="showSection('certifications')">Certification</a>
+      <a onclick="showSection('timeline')">Education</a>
+      <a onclick="showSection('extracurricular')">Extracurricular</a>
+      <a onclick="showSection('lifejourney')">Soulprint</a>
+      <a onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero active">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Hi, I’m Diksha!</h1>
+        <p>Computer Engineering student | Aspiring Software Developer | Dreamer with a plan</p>
+      </div>
+      <div class="glow-container">
+        <img src="diksha.jpg" alt="Your Image" class="profile-image">
+      </div>
+    </div>
+    <div class="hero-button">
+      <button class="btn" onclick="showSection('about')">Explore My Work</button>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <div class="divp">
+      <p class="d">My Name is Diksha Ganesh Sonawane. I'm born and brought up at Baramati, Maharashtra. I've done my
+        schooling from Baramati, Maharashtra. I've scored 94% in 10th and 86% in Diploma.Currently I'm doing my
+        bachelor's degree in Computer Science Engineering from JSCOE Hadapsar. I've strong interest in Full-Stack
+        Development and AI.I've done an Engineering project's on Third Gender : Fight for Equality , It is a study on
+        the problems faced by Thirdgender's in day to day life. and Portfolio : Diksha Sonawane , In that we Built a
+        responsive portfolio website to showcase my skills, projects, and resume.Along with this I've also done an
+        engineering internship from CoreTech Company for the duration was for 3 months, Here I learned HTML, CSS,
+        JavaScript & PHP. Also I've an internship going on from codeSoft Company for the duration of 1 month, Where I
+        will work on the projects of Web Development, Java Programming & Python Programming.</p>
+      <p class="d">Apart from the above mention I have taken few certifications on Android & PHP from VJTech, MongoDB
+        from MongoDB University. I have Acedemic achievements to share with you as I have certified with A grade in
+        Elementry & Intermediate Drawing Compition And extracaricular achievements as I have conducted the sessions in
+        different-different schools regarding Health Awarenees and Woman Empowerment through IEEE.I’m especially strong
+        in problem-solving, adaptability, and creativity, which I apply while working on full-stack projects like my
+        personal portfolio and web applications.I also value consistency and have a sharp attention to detail,
+        especially in design and code structure. Sometimes, I get so absorbed in a project that I forget to take breaks,
+        and I tend to try doing everything myself before seeking help but I’m learning to balance that by improving my
+        workflow and collaboration habits.</p>
+      <p class="d">&ensp;Right now, I’m focused on growing my backend skills and preparing for internships and placement
+        opportunities.</p>
+    </div>
+    <div><a href="resume.html" class="cv-button" target="_blank">Download CV</a></div>
+  </section>
+
+  <section id="projects" class="content-section">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <a href="https://github.com/Diksha121310/The-Third-Gender-Fight-for-Equality" target="_blank" class="project-card">
+        <img src="thirdgender.png" alt="Project 1" />
+        <h4>The Third Gender : Fight for Equality</h4>
+        <p>Solution on the problems faced by Thirdgender's in day to day life</p>
+      </a>
+      <a href="https://github.com/Diksha121310/Portfolio_Diksha_Sonawane.git" target="_blank" class="project-card">
+        <img src="ptd.png" alt="Project 2" />
+        <h4>Portfolio - Diksha Sonawane</h4>
+        <p>Built a responsive portfolio website to showcase my skills, projects, and resume.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="certifications" class="content-section">
+    <h2>🎓 Certifications</h2>
+    <div class="cert-container">
+      <div class="cert-card">
+        <h3>Android Development Training</h3>
+        <p>Issued by VJTech Institute | Sep 2024</p>
+        <a href="certificate.html?img=android.png&section=certifications" target="_blank">
+          <img src="android.png" class="imgc" alt="Android Certificate">
+        </a>
+      </div>
+      <div class="cert-card">
+        <h3>PHP &ensp;Development Training</h3>
+        <p>Issued by VJTech Institute | Sep 2024</p>
+        <a href="certificate.html?img=php.png&section=certifications" target="_blank">
+          <img src="php.png" class="imgc" alt="PHP Certificate">
+        </a>
+      </div>
+      <div class="cert-card">
+        <h3>MongoDB Development Training</h3>
+        <p>Issued by MongoDB University | July 2025</p>
+        <a href="certificate.html?img=mongodb.png&section=certifications" target="_blank">
+          <img src="mongodb.png" class="imgc" alt="MongoDB Certificate">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline" class="content-section">
+    <h2>My Education</h2>
+    <div class="timeline">
+      <div class="timeline-card">
+        <h3>Diploma in Computer Engineering</h3>
+        <p class="ad">Shivnagar Vidya Prasark Mandal's College of Engineering, Malegaon (BK) , Baramati Pune - 413115
+        </p>
+        <p class="ad">Graduated: 2024 | Percentage: 86%</p>
+        <p class="d">
+          Built a solid programming foundation through hands-on experience in languages like C, C++, Java, and exposure
+          to core engineering subjects.
+          Gained practical skills in solving real-world problems through code by completing hundreds of logic-building
+          exercises and mini-projects.
+        </p>
+        <p class="d">
+          Engaged in extracurricular activities and technical events that fostered team collaboration and leadership.
+          Developed key soft skills such as communication, adaptability, and time management that continue to support my
+          academic and internship performance.
+        </p>
+        <p class="d">
+          This phase laid the groundwork for my interest in software development and inspired me to pursue a deeper
+          understanding of web and backend technologies at the degree level.
+        </p>
+      </div>
+      <div class="timeline-card">
+        <h3>Bachelor in Computer Engineering</h3>
+        <p class="ad">JSPM's Jaywantrao Sawant College of Engineering, Hadapsar, Pune - 411028</p>
+        <p class="ad">Expected Graduation: 2027 | Current CGPA: 7.77</p>
+        <p class="d">
+          Pursuing a comprehensive curriculum covering core areas like Data Structures, System Programming, Web
+          Technologies, and Artificial Intelligence.
+          Developed academic projects involving full-stack development and backend systems, including a secure
+          multi-role web portal for social impact.
+        </p>
+        <p class="d">
+          Actively involved in coding assignments, group projects, and internships that emphasize both academic learning
+          and real-world implementation.
+          Continuously enhancing skills in Python, C++, Java, MySQL, and modern development tools such as GitHub and VS
+          Code.
+        </p>
+        <p class="d">
+          Participating in workshops, certification courses, and technical sessions to stay up-to-date with the evolving
+          tech landscape, with a long-term goal of becoming a full-stack developer and backend specialist.
+        </p>
+      </div>
+      <!--<div class="timeline-card">
+        <h3>Real-World Projects</h3>
+        <p>Shipped tools in C#, explored image processing, storytelling through code, and AI content.</p>
+      </div>-->
+    </div>
+  </section>
+
+  <section id="extracurricular" class="content-section">
+    <h2>🌟 Extracurricular Achievements</h2>
+    <div class="cert-container">
+      <div class="cert-card">
+        <h3>IEEE Eureka School Visit</h3>
+        <p>Conducted sessions on Health Awareness and Women Empowerment</p>
+        <a href="certificate.html?gallery=ieee&section=extracurricular" target="_blank">
+          <img src="schoolv2_2.jpg" class="imgc" alt="IEEE Visit Certificate">
+        </a>
+
+      </div>
+      <div class="cert-card">
+        <h3>Paper Presentation Certificate</h3>
+        <p>Recognized for technical paper presentation in college events</p>
+        <a href="certificate.html?img=techno.png&section=extracurricular" target="_blank">
+          <img src="techno.png" class="imgc" alt="Paper Presentation Certificate">
+        </a>
+      </div>
+      <div class="cert-card">
+        <h3>Entrepreneurship Certificate</h3>
+        <p>Participated in workshops fostering innovation and business mindset</p>
+        <a href="certificate.html?img=enter.jpg&section=extracurricular" target="_blank">
+          <img src="enter.jpg" class="imgc" alt="Entrepreneurship Certificate">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="lifejourney" class="content-section">
+    <div class="journey-stage">🎨 Hobbies</div>
+    <div class="auto-scroll-container">
+      <div class="rect-gallery">
+        <div class="rect-item"><img src="jimin.jpg" alt="Drawing"></div>
+        <div class="rect-item"><img src="rangoli.jpg" alt="Rangoli"></div>
+        <div class="rect-item"><img src="ganesha.jpg" alt="Ganesha"></div>
+        <div class="rect-item"><video src="gang4.mp4" autoplay muted loop></video></div>
+        <div class="rect-item"><img src="rangoli2.jpg" alt="Rangoli"></div>
+        <div class="rect-item"><img src="tution.jpg" alt="Tution"></div>
+        <div class="rect-item"><img src="rangoli3.jpg" alt="Rangoli"></div>
+        <div class="rect-item"><video src="dance.mp4" autoplay muted loop></video></div>
+      </div>
+    </div>
+
+
+    <div class="journey-stage">😊 Happy Moments</div>
+    <div class="auto-scroll-container">
+      <div class="rect-gallery">
+        <div class="rect-item"><video src="gang6.mp4" autoplay muted loop></video></div>
+        <div class="rect-item"><img src="gang.jpg" alt="Friends"></div>
+        <div class="rect-item"><img src="gang2.jpg" alt="Friends"></div>
+        <div class="rect-item"><video src="gang5.mp4" autoplay muted loop></video></div>
+        <div class="rect-item"><img src="gang3.jpg" alt="Friends"></div>
+        <div class="rect-item"><video src="anu.mp4" autoplay muted loop></video></div>
+        <div class="rect-item"><img src="anu2.jpg" alt="Friends"></div>
+        <div class="rect-item"><video src="robo.mp4" autoplay muted loop></video></div>
+        <div class="rect-item"><img src="me.jpg" alt="Friends"></div>
+        <div class="rect-item"><video src="anu1.mp4" autoplay muted loop></video></div>
+        <div class="rect-item"><img src="me2.jpg" alt="Friends"></div>
+        <div class="rect-item"><video src="me.mp4" autoplay muted loop></video></div>
+      </div>
+    </div>
+
+    <div class="journey-stage">👨‍👩‍👧 Family</div>
+    <div class="auto-scroll-container">
+      <div class="rect-gallery">
+        <div class="rect-item"><img src="fam8.jpg" alt="Family"></div>
+        <div class="rect-item"><img src="fam.jpg" alt="Family"></div>
+        <div class="rect-item"><img src="fam2.jpg" alt="Family"></div>
+        <div class="rect-item"><img src="fam1.jpg" alt="Family"></div>
+        <div class="rect-item"><img src="fam10.jpg" alt="Family"></div>
+        <div class="rect-item"><video src="fam.mp4" autoplay muted loop></video></div>
+        <div class="rect-item"><img src="fam3.jpg" alt="Family"></div>
+        <div class="rect-item"><img src="fam4.jpg" alt="Family"></div>
+        <div class="rect-item"><img src="fam5.jpg" alt="Family"></div>
+        <div class="rect-item"><img src="fam6.jpg" alt="Family"></div>
+        <div class="rect-item"><img src="fam7.jpg" alt="Family"></div>
+        <div class="rect-item"><img src="fam9.jpg" alt="Family"></div>
+        <div class="rect-item"><video src="fam2.mp4" autoplay muted loop></video></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="contact" class="content-section">
+    <h2>Let’s Connect</h2>
+    <p>Email: <a href="https://dikshasonawane121310@gmail.com">dikshasonawane121310@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/diksha121310" target="_blank">@diksha121310</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/diksha-sonawane-b70652375/"
+        target="_blank">linkedin.com/in/dikshasonawane</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Diksha | Made with 💙 in Code & Dreams</p>
+  </footer>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = function () {
+      if (localStorage.getItem('scrollToAbout') === 'true') {
+        showSection('about');
+        localStorage.removeItem('scrollToAbout');
+      }
+      if (localStorage.getItem('scrollToCertifications') === 'true') {
+        showSection('certifications');
+        localStorage.removeItem('scrollToCertifications');
+      }
+      if (localStorage.getItem('scrollToExtracurricular') === 'true') {
+        showSection('extracurricular');
+        localStorage.removeItem('scrollToExtracurricular');
+      }
+
+      const stages = document.querySelectorAll('.journey-stage');
+      const galleries = document.querySelectorAll('.circle-gallery');
+
+      setTimeout(() => galleries[0].classList.add('active'), 3000);
+      setTimeout(() => galleries[1].classList.add('active'), 7000);
+      setTimeout(() => galleries[2].classList.add('active'), 11000);
+
+      document.querySelectorAll('.rect-gallery').forEach(gallery => {
+        gallery.innerHTML += gallery.innerHTML;
+      });
+    };
+  </script>
+</body>
+
+</html>

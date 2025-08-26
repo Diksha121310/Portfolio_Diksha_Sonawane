@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificate Viewer</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 20px;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .back-button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .back-button:hover {
+      background-color: #005fa3;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      max-width: 800px;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button" id="backHome">← Back to Home</a>
+
+  <div class="gallery" id="galleryContainer"></div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const cert = urlParams.get('img');
+    const galleryId = urlParams.get('gallery');
+    const section = urlParams.get('section');
+
+    const container = document.getElementById("galleryContainer");
+
+    const galleries = {
+      ieee: ["schoolv1_1.jpg", "schoolv1_2.jpg", "schoolv2.jpg", "schoolv2_2.jpg", "schoolv2_3.jpg"],
+      techno: ["techno.png"],
+      entrepreneur: ["enter.jpg"]
+    };
+
+    if (galleryId && galleries[galleryId]) {
+      galleries[galleryId].forEach(imgName => {
+        const img = document.createElement("img");
+        img.src = imgName;
+        img.alt = imgName;
+        container.appendChild(img);
+      });
+    } else if (cert) {
+      const img = document.createElement("img");
+      img.src = cert;
+      img.alt = "Certificate";
+      container.appendChild(img);
+    } else {
+      container.innerHTML = "<p>No certificate found.</p>";
+    }
+
+    // Back button setup
+    const backHome = document.getElementById("backHome");
+
+    backHome.addEventListener('click', function() {
+      if (section === 'extracurricular') {
+        localStorage.setItem('scrollToExtracurricular', 'true');
+      } else {
+        localStorage.setItem('scrollToCertifications', 'true');
+      }
+      // The link will now naturally navigate to index.html
+    });
+  </script>
+
+</body>
+</html>
